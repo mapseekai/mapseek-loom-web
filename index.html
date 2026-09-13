@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/loom.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>mapseek loom</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.26.0/dist/tabler-icons.min.css"
+    />
+    <style>
+      /* Critical paint before the main bundle loads or React mounts.
+         Prevents the "black flash" seen by OS-dark-mode users in any
+         gap between HTML parse, CSS load, and React's first paint.
+         `html.dark` matches the class the inline bootstrap below
+         applies synchronously so the first paint already has the
+         correct theme background — no flip from light → dark. */
+      html { background: #ffffff; }
+      html.dark { background: oklch(0.147 0.004 49.25); }
+      html, body { margin: 0; min-height: 100%; }
+      #root { min-height: 100vh; }
+    </style>
+    <script>
+      /* Apply the resolved theme class on <html> BEFORE the first paint
+         so CSS vars (bg-background etc.) resolve to the right values
+         immediately. Mirrors the logic in components/theme-provider.tsx;
+         keep in sync if storage key or default ever changes. */
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var dark;
+          if (stored === "dark") dark = true;
+          else if (stored === "light") dark = false;
+          else dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (_) {
+          /* localStorage / matchMedia can throw in sandboxed contexts. */
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-CcFUxCmr.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D7G3H9Sh.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
