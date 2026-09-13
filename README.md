@@ -2,7 +2,7 @@
 
 Public static build of Mapseek Loom. This repository contains deployment artifacts only.
 
-Website: https://mapseekai.github.io/mapseek-loom-pages/
+Website: https://mapseekai.github.io/mapseek-loom-web/
 
 Download the static ZIP from Releases, extract it, and serve its contents over HTTPS or localhost. No application backend is required. Hash routes and relative asset URLs support subdirectory hosting.
 

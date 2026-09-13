@@ -1,6 +1,7 @@
 {
   "application": "Mapseek Loom",
-  "build": "2026-09-13",
-  "sourceCommit": "7f886a4",
+  "build": "2026-09-13-r2",
+  "sourceCommit": "1087b14",
+  "emap": "0.11.1",
   "routing": "hash"
 }
