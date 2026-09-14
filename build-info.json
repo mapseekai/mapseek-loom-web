@@ -1,7 +1,10 @@
 {
   "application": "Mapseek Loom",
-  "build": "2026-09-13-r2",
-  "sourceCommit": "1087b14",
-  "emap": "0.11.1",
+  "build": "2026-09-14",
+  "sourceCommit": "c6dc55330dc15977d04bdef65e3828813f3e1b04",
+  "emap": "0.11.2",
+  "apacheArrow": "17.0.0",
+  "duckdbWasm": "1.33.1-dev64.0",
+  "maplibre": "6.5.0",
   "routing": "hash"
 }
