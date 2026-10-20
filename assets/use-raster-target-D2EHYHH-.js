@@ -1,0 +1,1 @@
+import{r as s}from"./index-e2E_zQcP.js";import{s as c,r as u}from"./EditorPage-Cg1rP4mB.js";const b=()=>()=>{},o=()=>0;function S(e,a){const n=s.useCallback(i=>c(e,i),[e]),t=s.useCallback(()=>u(e),[e]),r=s.useSyncExternalStore(n,t,t);return s.useSyncExternalStore(r?.subscribe??b,r?.getRevision??o,o),{bridge:r,target:r?.getStyleTarget(a)}}export{S as u};
