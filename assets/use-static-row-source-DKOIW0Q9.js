@@ -1,1 +1,0 @@
-import{r as l}from"./index-TtBpb4W-.js";function i(t,r){const e=r?.query??"",o=r?.match,c=l.useMemo(()=>{if(!e||!o)return t;const n=e.toLowerCase();return t.filter(a=>o(a,n))},[t,e,o]),u=r?.itemsKey??String(t.length);return{totalCount:c.length,getRow:n=>c[n],scrollKey:`${u}|${e}`,isInitialLoading:!1,error:null,refetch:()=>{}}}export{i as u};
