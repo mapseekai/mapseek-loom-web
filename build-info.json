@@ -1,7 +1,7 @@
 {
   "application": "Mapseek Loom",
-  "build": "2026-10-20-r3",
-  "sourceCommit": "19d56c8f8813c4f0f743755afaebc4cbde771e70",
+  "build": "2026-10-21",
+  "sourceCommit": "fa6dda1a6cf24b2ad7e086673ad70e216d70e5ee",
   "emap": "0.14.3",
   "apacheArrow": "17.0.0",
   "duckdbWasm": "1.33.1-dev64.0",
@@ -10,5 +10,5 @@
   "loom": "0.0.1",
   "sdk": "0.4.0",
   "workbench": "0.2.0",
-  "releaseTag": "static-2026-10-20-r3"
+  "releaseTag": "static-2026-10-21"
 }
