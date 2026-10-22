@@ -1,14 +1,15 @@
 {
   "application": "Mapseek Loom",
-  "build": "2026-10-22",
-  "sourceCommit": "b6d88b9bf08b94606a72178c749348f1a15adce5",
+  "build": "2026-10-22-r2",
+  "sourceCommit": "bd919ad47d52b42a30f092ac61d20145b70768aa",
+  "releaseTag": "static-2026-10-22-r2",
+  "builtAt": "2026-10-22T02:08:59.961169+00:00",
+  "routing": "hash",
   "emap": "0.15.0",
   "apacheArrow": "17.0.0",
   "duckdbWasm": "1.33.1-dev64.0",
   "maplibre": "6.5.0",
-  "routing": "hash",
   "loom": "0.0.1",
   "sdk": "0.4.0",
-  "workbench": "0.2.0",
-  "releaseTag": "static-2026-10-22"
+  "workbench": "0.2.0"
 }
